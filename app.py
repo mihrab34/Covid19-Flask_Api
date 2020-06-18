@@ -16,7 +16,8 @@ def index(date=None):
 		if query_date is not None:
 			d = query_date
 		else:
-			data = fetchData(url, date=query_date)
+			d = todayDate
+		data = fetchData(url, date = d)
 	else:
 		data = fetchData(url, date)
 
